@@ -10,9 +10,7 @@ input,
 button {
   outline: none;
 }
-ul li input[type=text] {
-  display: none;
-}
+
 
 /* Basic Style */
 .page {
@@ -133,7 +131,7 @@ ul li input[type=text] {
   width: 226px;
 }
 .list-item__input {
-  width: 226px;
+  display: none;
 }
 .btn-delete__img {
   height: 2em;
@@ -151,10 +149,11 @@ ul li input[type=text] {
   text-decoration: line-through;
   color: #888;
 }
+
 /* Edit Task */
 .list-item_edit-mode .list-item__label {
-    display: none;
-  }  
+  display: none;
+}  
 .list-item_edit-mode .list-item__input {
   display: inline-block;
   width: 224px;
