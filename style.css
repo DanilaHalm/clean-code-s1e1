@@ -13,9 +13,6 @@ button{
 ul li input[type=text] {
   display: none;
 }
-ul li.editMode label {
-  display: none;
-}
 
 /* Basic Style */
 .page {
@@ -70,6 +67,8 @@ button {
 button:hover {
   color: #3a3a3a;
 }
+
+
 /* Heading */
 h3,
 label[for='new-task'] {
@@ -141,16 +140,18 @@ li >    input[type="text"] {
   transform: rotateZ(0);
 }
 
+
+
 /* Completed */
-ul#completed-tasks label {
+.list-item__label_done {
   text-decoration: line-through;
   color: #888;
 }
-
 /* Edit Task */
-
-
-ul li.editMode input[type=text] {
+.list-item_edit-mode .list-item__label {
+    display: none;
+  }  
+.list-item_edit-mode .list-item__input {
   display: inline-block;
   width: 224px;
 }
