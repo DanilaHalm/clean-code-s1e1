@@ -7,7 +7,7 @@ h3 {
   list-style: none;
 }
 input,
-button{
+button {
   outline: none;
 }
 ul li input[type=text] {
@@ -55,7 +55,8 @@ ul li input[type=text] {
 /*--------------------------------------------*/
 
 
-button {
+.list-item__btn,
+.add-new-task__btn {
   background: none;
   border: 0px;
   color: #888;
@@ -64,14 +65,14 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.list-item__btn:hover,
+.add-new-task__btn:hover {
   color: #3a3a3a;
 }
 
 
 /* Heading */
-h3,
-label[for='new-task'] {
+.headline {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -99,7 +100,7 @@ label[for='new-task'] {
 }
 
 /* New Task */
-label[for='new-task'] {
+.add-task-section__headline {
   display: block;
   margin: 0 0 20px;
 }
