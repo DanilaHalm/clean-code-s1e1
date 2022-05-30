@@ -1,6 +1,7 @@
+/* -----------------------Reset styles----------------------- */
 ul {
   margin: 0;
-  padding: 0px;
+  padding: 0;
 }
 li, 
 h3 {
@@ -10,9 +11,7 @@ input,
 button {
   outline: none;
 }
-
-
-/* Basic Style */
+/* -----------------------Basic Style----------------------- */
 .page {
   background-color: #f8f8f8;
   color: #333;
@@ -24,17 +23,18 @@ button {
   display: block;
   text-align: right;
 }
+@media (max-width: 768px) {
+
+  .page-description { 
+    text-align: center;
+  }
+  
+}  
 .description-img {
   width: 100%;
 }
 .description-link {
   font-family: fantasy, cursive;
-}
-
-@media (max-width: 768px) {
-  .page-description { 
-    text-align: center;
-  }
 }
 .page-content {
   display: block;
@@ -49,10 +49,6 @@ button {
 .add-new-task {
   display: flex;
 }
-
-/*--------------------------------------------*/
-
-
 .list-item__btn,
 .add-new-task__btn {
   background: none;
@@ -67,9 +63,7 @@ button {
 .add-new-task__btn:hover {
   color: #3a3a3a;
 }
-
-
-/* Heading */
+/* -----------------------Heading----------------------- */
 .headline {
   color: #333;
   font-weight: 700;
@@ -96,18 +90,15 @@ button {
 .list-item__input:focus {
   color: #333;
 }
-
-/* New Task */
+/* -----------------------New Task----------------------- */
 .add-task-section__headline {
   display: block;
   margin: 0 0 20px;
 }
-
 .add-new-task__input {
   width: 318px;
 }
-
-/* Task list */
+/* -----------------------Task list----------------------- */
 .list-item {
   overflow: hidden;
   padding: 20px 0;
@@ -120,7 +111,6 @@ button {
 .list-item > * {
   vertical-align: middle;
 }
-
 .list-item__checkbox {
   margin: 0 10px;
 }
@@ -141,16 +131,12 @@ button {
 .btn-delete__img:hover {
   transform: rotateZ(0);
 }
-
-
-
-/* Completed */
+/* -----------------------Completed----------------------- */
 .list-item__label_done {
   text-decoration: line-through;
   color: #888;
 }
-
-/* Edit Task */
+/* -----------------------Edit Task----------------------- */
 .list-item_edit-mode .list-item__label {
   display: none;
 }  
